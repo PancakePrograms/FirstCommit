@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    font-size: 15pt;
+    text-align: center;
+    border: 1px solid black;
+}
+.topContainer {
+  text-align: center;
+}
+.logo {
+  width: 80px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.links {
+  margin-left: 30px;
+}
+.head1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head2 {
+  display: inline-block;
+}
+.mainPhoto {
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  
+}
+.smallPic {
+  width: 100px;
+  text-align: center;
+}
+.grid {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+}
+.picHead {
+  position: absolute;
+  z-index: 2;
+  padding: 10px;
+  text-align: center;
+}
+figure{
+  display: flex;
+  align-items: center;
+}
+img, figcaption {
+  display: inline-block;
+  vertical-align: center;
+  text-align: center;
+}
+.header2 {
+  text-align: center;
+}
