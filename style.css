@@ -5,7 +5,6 @@ html {
 body {
     font-size: 15pt;
     text-align: center;
-    border: 2px solid black;
 }
 .topContainer {
   text-align: center;
@@ -16,43 +15,32 @@ body {
   margin-right: 20px;
 }
 .links {
-  margin-left: 30px;
+  margin-top: 0;
 }
-.head1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.head2 {
-  display: inline-block;
-}
-.mainPhoto {
-  width: 300px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  
-}
-.smallPic {
-  width: 100px;
-  text-align: center;
-}
-.grid {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.text {
-  position: relative;
-  z-index: 1;
-  padding: 10px;
-}
-.picHead {
+.sideBar {
+  height: 100%;
+  background-color: lightblue;
+  width: 90px;
+  display: none;
   position: absolute;
-  z-index: 2;
-  padding: 10px;
-  text-align: center;
+  top: 0;
+  left: 0px;
+  
+  animation: slide .2s linear;
+}
+@keyframes slide {
+  0% {left: -50px;
+    opacity: 0;
+  }
+  100% {left: 0px;
+    opacity: 1;
+  }
+}
+.line {
+  background-color: black;
+  height: 2px;
+  width: 20px;
+  margin: 6px 0;
 }
 figure{
   display: flex;
@@ -65,4 +53,17 @@ img, figcaption {
 }
 .header2 {
   text-align: center;
+}
+.mainPhoto {
+  width: 100px;
+}
+.smallPic {
+  width: 100px;
+}
+.burger {
+  background: none;
+  border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
